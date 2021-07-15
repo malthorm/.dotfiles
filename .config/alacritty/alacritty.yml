@@ -1,0 +1,160 @@
+# # Colors (Gruvbox Dark)
+# colors:
+#   bright:
+#     black: '#7f7061'
+#     blue: '#719586'
+#     cyan: '#7db669'
+#     green: '#aab01e'
+#     magenta: '#c77089'
+#     red: '#f73028'
+#     white: '#e6d4a3'
+#     yellow: '#f7b125'
+#   cursor:
+#     cursor: '#e6d4a3'
+#     text: '#1e1e1e'
+#   normal:
+#     black: '#1e1e1e'
+#     blue: '#377375'
+#     cyan: '#578e57'
+#     green: '#868715'
+#     magenta: '#a04b73'
+#     red: '#be0f17'
+#     white: '#978771'
+#     yellow: '#cc881a'
+#   primary:
+#     background: '#1e1e1e'
+#     foreground: '#e6d4a3'
+#   selection:
+#     background: '#e6d4a3'
+#     text: '#534a42'
+
+
+# Colors (Gruvbox Light)
+colors:
+  bright:
+    black: '#9d8374'
+    blue: '#458588'
+    cyan: '#689d69'
+    green: '#98971a'
+    magenta: '#b16186'
+    red: '#cc241d'
+    white: '#7c6f64'
+    yellow: '#d79921'
+  cursor:
+    cursor: '#282828'
+    text: '#fbf1c7'
+  normal:
+    black: '#fbf1c7'
+    blue: '#076678'
+    cyan: '#427b58'
+    green: '#79740e'
+    magenta: '#8f3f71'
+    red: '#9d0006'
+    white: '#3c3836'
+    yellow: '#b57614'
+  primary:
+    background: '#fbf1c7'
+    foreground: '#282828'
+  selection:
+    background: '#d5c4a1'
+    text: '#665c54'
+      
+# # Colors (Solarized Dark)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x002b36'
+#     foreground: '0x839496'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x073642'
+#     red:     '0xdc322f'
+#     green:   '0x859900'
+#     yellow:  '0xb58900'
+#     blue:    '0x268bd2'
+#     magenta: '0xd33682'
+#     cyan:    '0x2aa198'
+#     white:   '0xeee8d5'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x002b36'
+#     red:     '0xcb4b16'
+#     green:   '0x586e75'
+#     yellow:  '0x657b83'
+#     blue:    '0x839496'
+#     magenta: '0x6c71c4'
+#     cyan:    '0x93a1a1'
+#     white:   '0xfdf6e3'
+
+  background_opacity: 0.5
+
+  # Change cursor colors
+  cursor:
+    text: "#3B4252"
+    cursor: "#ECEFF4"
+
+cursor:
+  style:
+    blinking: Never
+
+font:
+  # The normal (roman) font face to use.
+  normal:
+    family: JetBrainsMono Nerd Font
+    # Style can be specified to pick a specific face.
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: JetBrains Mono Nerd Font
+    # Style can be specified to pick a specific face.
+    style: Bold
+
+  # The italic font face
+  italic:
+    family: JetBrains Mono Nerd Font
+    # Style can be specified to pick a specific face.
+    # Style can be specified to pick a specific face.
+    style: Italic
+
+  size: 16.0
+
+  ligatures: false
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+window:
+  padding:
+    x: 2
+    y: 2
+  # scrolling:
+  #   # Maximum number of lines in the scrollback buffer.
+  #   # Specifying '0' will disable scrolling.
+  history: 10000
+  #   # Number of lines the viewport will move for every line scrolled when
+  #   # scrollback is enabled (history > 0).
+  #   multiplier: 10
+
+# Allow terminal applications to change Alacritty's window title.
+  dynamic_title: true
+
+  # # If `true`, bold text is drawn using the bright color variants.
+  # draw_bold_text_with_bright_colors: true
+
+  # selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+  live_config_reload: true
+
+key_bindings:
+  # - { key: V, mods: Control|Shift, action: Paste }
+  # - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  # - { key: N, mods: Control, action: SpawnNewInstance }
