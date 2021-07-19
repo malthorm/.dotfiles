@@ -7,10 +7,12 @@ call plug#begin()
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-commentary'
+" Plug 'NLKNguyen/papercolor-theme'
 Plug 'cohama/lexima.vim'
-Plug 'morhetz/gruvbox'
 
 if has("nvim")
+  Plug 'bluz71/vim-nightfly-guicolors'
+  Plug 'projekt0n/github-nvim-theme'
   Plug 'neovim/nvim-lspconfig'
   Plug 'glepnir/lspsaga.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
