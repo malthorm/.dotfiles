@@ -2,13 +2,14 @@
 [[ $- != *i* ]] && return
 
 # Basic stuff
-export Term="xterm-256color"
+# export Term="xterm-256color"
 export HISTFILE=~/.config/zsh/.zsh_history
 
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
 
+export PATH="/home/malthor/.local/bin:$PATH"
 # Basic zsh settings
 bindkey -v  # vi-mode
 export KEYTIMEOUT=1
