@@ -84,35 +84,35 @@ key_bindings:
   - {key: T, mods: Alt, chars: "\et"}
   - {key: Y, mods: Alt, chars: "\ey"}
 colors:
-  # COLORSCHEME: github-theme.yml
+  # COLORSCHEME: nightfly.yml
   # Default colors
   primary:
     # hard contrast: background = '0xf9f5d7'
-    background: '0xffffff'
-    foreground: '0x586069'
+    background: '#011627'
+    foreground: '#acb4c2'
+    bright_foreground: '#eeeeee'
 
-  # Normal colors
+  # Cursor colors
   normal:
-    black: '0xCCCCCC'
-    red: '0xd03d3d'
-    green: '0x14ce14'
-    yellow: '0x949800'
-    blue: '0x0451a5'
-    magenta: '0xbc05bc'
-    cyan: '0x0598BC'
-    white: '0x586069'
+    black: '#1d3b53'
+    red: '#fc514e'
+    green: '#a1cd5e'
+    yellow: '#e3d18a'
+    blue: '#82aaff'
+    magenta: '#c792ea'
+    cyan: '#7fdbca'
+    white: '#a1aab8'
 
   # Bright colors
   bright:
-    black: '0x666666'
-    red: '0xcd3131'
-    green: '0x14ce14'
-    yellow: '0xb5ba00'
-    blue: '0x0451a5'
-    magenta: '0xbc05bc'
-    cyan: '0x0598BC'
-    white: '0x586069'
-
+    black: '#7c8f8f'
+    red: '#ff5874'
+    green: '#21c7a8'
+    yellow: '#ecc48d'
+    blue: '#82aaff'
+    magenta: '#ae81ff'
+    cyan: '#7fdbca'
+    white: '#d6deeb'
   dim:
     black: '0x31363b'
     red: '0x783228'
