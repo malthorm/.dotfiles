@@ -109,6 +109,7 @@ alias ll='ls -l --color'
 alias la='ls -al --color'
 alias less='less -R'
 alias docker='sudo docker'
+alias docker-compose='sudo docker-compose'
 alias light='alacritty-colorscheme apply github-theme.yml'
 alias dark='alacritty-colorscheme apply nightfly.yml'
 
