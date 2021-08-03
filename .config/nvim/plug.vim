@@ -21,6 +21,8 @@ if has("nvim")
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'kyazdani42/nvim-tree.lua'
   Plug 'hoob3rt/lualine.nvim'
+  Plug 'windwp/nvim-ts-autotag'
 endif
 call plug#end()
