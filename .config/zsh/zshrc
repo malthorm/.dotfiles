@@ -92,35 +92,23 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-## confirm before overwriting something
-alias cp="cp -i"
-alias mv='mv -i'
-alias rm='rm -i'
-
-## get top process eating memory
-alias psmem='ps auxf | sort -nr -k 4 | head -5'
-
-## get top process eating cpu ##
-alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 
 ## aliases for frequently used cmds
-alias ls='ls --color'
-alias ll='ls -l --color'
-alias la='ls -al --color'
+alias ls='exa'
+alias ll='exa -l'
+alias la='exa -al'
 alias less='less -R'
-alias docker='sudo docker'
-alias docker-compose='sudo docker-compose'
-alias light='alacritty-colorscheme apply github-theme.yml'
-alias dark='alacritty-colorscheme apply nightfly.yml'
+alias light='alacritty-colorscheme apply tokyonight_day.yaml'
+alias dark='alacritty-colorscheme apply tokyonight_night.yaml'
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 alias config="cd ~/.config"
 alias root='/'
-alias vim='nvim'
-alias vimo='nvim $(fzf)'
+alias vi='nvim'
 alias fd='fdfind'
 alias copy='xsel -ib'
 alias b='cd ..'
 alias lsd='ls -d */'
-alias youtube='youtube-dl -x --audio-format "mp3" --add-metadata'
+alias youtube='youtube-dl -x --audio-format "mp3"'
 
 

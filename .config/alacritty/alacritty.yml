@@ -4,42 +4,21 @@ window:
     x: 0
     y: 0
   dynamic_padding: true
-  title: a
-  dynamic_title: true
-
-# font:
-#   normal:
-#     family: Roboto Mono
-#     size: 21.0
-#   offset:
-#     x: 0
-#     y: 0
-#   glyph_offset:
-#     x: 0
-#     y: 0
-#   use_thin_strokes: true
+  title: Alacritty
+    #dynamic_title: true
 
 font:
   normal:
-    family: Roboto Mono
-    style: Light
-  bold:
-    family: Roboto Mono
-    style: Regular
-  italic:
-    family: Roboto Mono
-    style: Light Italic
-  bold italic:
-    family: Roboto Mono
-    style: Italic
-  size: 14.0
+    family: JetBrains Mono
+    style: Medium
   offset:
-    x: 0
+    x: -1
     y: 0
   glyph_offset:
     x: 0
     y: 0
-  use_thin_strokes: true
+  size: 14
+
 
 draw_bold_text_with_bright_colors: false
 
@@ -47,7 +26,7 @@ bell:
   animation: EaseOutSine
   duration: 100
   color: '#f2b8c5'
-background_opacity: 1
+window_opacity: 1
 cursor:
   style: Block
   unfocused_hollow: false
@@ -56,63 +35,63 @@ live_config_reload: true
 shell:
   program: /bin/zsh
 
-key_bindings:
-  - {key: Key0, mods: Alt, chars: "\e0"}
-  - {key: Key1, mods: Alt, chars: "\e1"}
-  - {key: Key2, mods: Alt, chars: "\e2"}
-  - {key: Key3, mods: Alt, chars: "\e3"}
-  - {key: Key4, mods: Alt, chars: "\e4"}
-  - {key: Key5, mods: Alt, chars: "\e5"}
-  - {key: Key6, mods: Alt, chars: "\e6"}
-  - {key: Key7, mods: Alt, chars: "\e7"}
-  - {key: Key8, mods: Alt, chars: "\e8"}
-  - {key: Key9, mods: Alt, chars: "\e9"}
-  - {key: F, mods: Alt, chars: "\ef"}
-  - {key: B, mods: Alt, chars: "\eb"}
-  - {key: J, mods: Alt, chars: x1bj}
-  - {key: K, mods: Alt, chars: "\ek"}
-  - {key: H, mods: Alt, chars: "\eh"}
-  - {key: L, mods: Alt, chars: "\el"}
-  - {key: Q, mods: Alt, chars: "\eq"}
-  - {key: U, mods: Alt, chars: "\eu"}
-  - {key: R, mods: Alt, chars: "\er"}
-  - {key: I, mods: Alt, chars: "\ei"}
-  - {key: O, mods: Alt, chars: "\eo"}
-  - {key: W, mods: Alt, chars: "\ew"}
-  - {key: E, mods: Alt, chars: "\ee"}
-  - {key: X, mods: Alt, chars: "\ex"}
-  - {key: T, mods: Alt, chars: "\et"}
-  - {key: Y, mods: Alt, chars: "\ey"}
+    # key_bindings:
+    #   - {key: Key0, mods: Alt, chars: "\e0"}
+    #   - {key: Key1, mods: Alt, chars: "\e1"}
+    #   - {key: Key2, mods: Alt, chars: "\e2"}
+    #   - {key: Key3, mods: Alt, chars: "\e3"}
+    #   - {key: Key4, mods: Alt, chars: "\e4"}
+    #   - {key: Key5, mods: Alt, chars: "\e5"}
+    #   - {key: Key6, mods: Alt, chars: "\e6"}
+    #   - {key: Key7, mods: Alt, chars: "\e7"}
+    #   - {key: Key8, mods: Alt, chars: "\e8"}
+    #   - {key: Key9, mods: Alt, chars: "\e9"}
+    #   - {key: F, mods: Alt, chars: "\ef"}
+    #   - {key: B, mods: Alt, chars: "\eb"}
+    #   - {key: J, mods: Alt, chars: x1bj}
+    #   - {key: K, mods: Alt, chars: "\ek"}
+    #   - {key: H, mods: Alt, chars: "\eh"}
+    #   - {key: L, mods: Alt, chars: "\el"}
+    #   - {key: Q, mods: Alt, chars: "\eq"}
+    #   - {key: U, mods: Alt, chars: "\eu"}
+    #   - {key: R, mods: Alt, chars: "\er"}
+    #   - {key: I, mods: Alt, chars: "\ei"}
+    #   - {key: O, mods: Alt, chars: "\eo"}
+    #   - {key: W, mods: Alt, chars: "\ew"}
+    #   - {key: E, mods: Alt, chars: "\ee"}
+    #   - {key: X, mods: Alt, chars: "\ex"}
+    #   - {key: T, mods: Alt, chars: "\et"}
+    #   - {key: Y, mods: Alt, chars: "\ey"}
 colors:
-  # COLORSCHEME: nightfly.yml
+  # COLORSCHEME: tokyonight_night.yaml
   # Default colors
   primary:
     # hard contrast: background = '0xf9f5d7'
-    background: '#011627'
-    foreground: '#acb4c2'
-    bright_foreground: '#eeeeee'
+    background: '0x1a1b26'
+    foreground: '0xc0caf5'
 
-  # Cursor colors
+  # Normal colors
   normal:
-    black: '#1d3b53'
-    red: '#fc514e'
-    green: '#a1cd5e'
-    yellow: '#e3d18a'
-    blue: '#82aaff'
-    magenta: '#c792ea'
-    cyan: '#7fdbca'
-    white: '#a1aab8'
+    black: '0x15161E'
+    red: '0xf7768e'
+    green: '0x9ece6a'
+    yellow: '0xe0af68'
+    blue: '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan: '0x7dcfff'
+    white: '0xa9b1d6'
 
   # Bright colors
   bright:
-    black: '#7c8f8f'
-    red: '#ff5874'
-    green: '#21c7a8'
-    yellow: '#ecc48d'
-    blue: '#82aaff'
-    magenta: '#ae81ff'
-    cyan: '#7fdbca'
-    white: '#d6deeb'
+    black: '0x414868'
+    red: '0xf7768e'
+    green: '0x9ece6a'
+    yellow: '0xe0af68'
+    blue: '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan: '0x7dcfff'
+    white: '0xc0caf5'
+
   dim:
     black: '0x31363b'
     red: '0x783228'
@@ -133,6 +112,5 @@ colors:
 
   # Normal colors
   indexed_colors:
-    - {index: 16, color: '0xd18616'}
-    - {index: 17, color: '0xcd3131'}
-
+    - {index: 16, color: '0xff9e64'}
+    - {index: 17, color: '0xdb4b4b'}

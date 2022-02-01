@@ -7,11 +7,15 @@ lua <<EOF
 require'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
-    disable = {},
+    disable = {'blade'},
   },
   indent = {
-    enable = false,
-    disable = {},
+    enable = true,
+    disable = {'blade'},
+  },
+  autotag = {
+    enable = true,
+    filetypes = { "html", "javascript", "javascriptreact", "vue", "blade", "xml" }
   },
   ensure_installed = {
     "php",

@@ -11,19 +11,20 @@ set number
 set fileencodings=utf-8
 set encoding=utf-8
 set title
-set autoindent smarttab shiftwidth=2 tabstop=2 
+set autoindent smartindent smarttab shiftwidth=2 tabstop=2 
 set nobackup
+set hidden
 set hlsearch ignorecase
 set showcmd
 set cmdheight=1
 set laststatus=2  " Always display the statusline
 set scrolloff=3
-set tw=80
+set tw=160
 set expandtab
 set mouse=a " Enable your mouse
 set shell=zsh
 set clipboard+=unnamedplus " Copy paste between vim and everything else
-set nowrap "No Wrap lines
+" set nowrap "No Wrap lines
 set backspace=start,eol,indent
 set wildignore+=*/node_modules/*
 
@@ -41,6 +42,8 @@ set undoreload
 au BufNewFile,BufRead *.es6 setf javascript
 " Markdown
 au BufNewFile,BufRead *.md set filetype=markdown
+" Blade
+au BufNewFile,BufRead *.blade.php set filetype=blade
 
 set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
 
@@ -62,19 +65,21 @@ runtime ./maps.vim
 if exists("&termguicolors")
   set termguicolors
   
-  set background=light
+  " set background=light
   if &background == "light" 
-    lua << EOF
-    require('github-theme').setup({
-      themeStyle = "light",
-      functionStyle = "italic",
-      sidebars = {"qf", "vista_kind", "terminal", "packer"},
-      colors = {hint = "orange", error = "#ff0000"}
-    })
-EOF
+    let g:tokyonight_style = "day"
   else
-    colorscheme nightfly
+    let g:tokyonight_style = "night"
   endif
+  
+  let g:tokyonight_italic_functions = 1
+
+  " Change the "hint" color to the "orange" color, and make the "error" color bright red
+  let g:tokyonight_colors = {
+  \ 'hint': 'orange',
+  \ 'error': '#ff0000'
+  \ }
+  colorscheme tokyonight
 
 " tmux conf
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
